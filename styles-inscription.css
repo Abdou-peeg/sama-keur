@@ -1,0 +1,258 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 7px 10%;
+    background-color: #24252a54;
+  }
+  
+  .logo {
+    margin-right: 30%;
+    align-items: center;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+  }
+
+  .nav__links a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 5%;
+  }
+  
+  .nav__links a,
+  .cta,
+  .overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+
+  }
+  
+  .nav__links li {
+    margin-right: 2%;
+    padding: 0px 20px;
+  }
+
+  .nav__links a i{
+    margin-right: 3%;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #ff5100;
+  }
+  
+  .cta {
+    margin-left: 2%;
+    padding: 9px 25px;
+    background-color:#ff5100;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(255, 81, 0, 0.8);
+    color: white;
+  }
+
+  .banner {
+    background-image: url('image/bannière\ 0\ copie.jpg'); 
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease forwards, blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+  
+/*corps de page*/
+
+body{
+  background-image: url(image/blurred-double-bed.jpg);
+  background-size: cover;
+}
+
+.formulaire{
+  padding-top: 30%;
+  color: #fff;
+  background-color: #fff;
+  padding: 28px;
+  border-radius: 10px;
+  max-width: 650px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.479);
+  box-shadow: 0 15px 20px rgba(0,0,0,0.6); 
+  margin-top: 25px;
+  margin-bottom: 6%;
+}
+form {
+margin-left: 25%;
+
+}
+
+legend{
+  padding: 20px;
+  align-items: center;
+  font-weight: bold;
+  font-size: 35px;
+  padding-left: 20%;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 2px;
+  
+}
+label {
+  padding-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="téléphone"],
+input[type="ndc"],
+input[type="adresse"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #fc6e1094;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+button a:hover {
+  color: rgb(0, 0, 0);
+}
+
+button:hover {
+  background-color: #fc6e10;
+}
+
+/*pied de page*/
+
+footer {
+  background-color: rgb(46, 56, 56);
+  margin-left: -35%;
+  background-position: center;
+}
+
+.section{
+  padding-top: 10%;
+}
+
+.pied {
+  padding: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, auto));
+  gap: 1.1rem;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 999;
+  margin-left: 0%;
+}
+
+.contenu-pied h3{
+  color: #fff;
+  margin-bottom: 3px;
+  font-size: 17px;
+  padding-top: 8px;
+}
+
+.contenu-pied li{
+  margin-bottom: 1px;
+  list-style-type: none;
+}
+
+.contenu-pied li a{
+  display: block;
+  color: #d6d6d6;
+  font-size: 14px;
+  font-weight: 400;
+  transition: all .40s ease;
+  text-decoration: none;
+  margin-bottom: 12px;
+}
+
+.contenu-pied p{
+  color: #d6d6d6;
+  font-size: 12px;
+  margin: 10px, 0;
+  padding-top: 8px;
+  padding-bottom: 7px;
+}
+
+.icones a{
+  display: inline-block;
+  font-size: 22px;
+  color: #d6d6d6;
+  margin-right: 17px;
+  transition: all.40s ease
+}
+
+.icones a:hover{
+  color: #fff;
+  transform: translateY(-5px);
+}
